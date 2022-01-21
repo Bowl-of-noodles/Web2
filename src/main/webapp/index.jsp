@@ -74,7 +74,6 @@
             <td>Result</td>
         </tr>
         </thead>
-        <div>Ля смотри: ${history.history.size()}</div>
         <tbody id="hits_table_body">
             <%
                 for (int i = history.getHistory().size() - 1; i >= 0; i--) {
