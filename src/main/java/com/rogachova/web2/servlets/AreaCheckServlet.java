@@ -20,7 +20,7 @@ public class AreaCheckServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         ShotRequest shotRequest = ShotRequest.fromHttpRequest(request);
-        System.out.println("Прилетел заро:" + shotRequest.toString());
+        System.out.println("Прилетел запрос:" + shotRequest.toString());
         if (shotRequest == null) return;
 
         Shot result = getShotFromRequest(shotRequest);
